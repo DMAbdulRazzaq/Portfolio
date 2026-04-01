@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Download, Mail } from "lucide-react";
+import { Github, Linkedin } from "./Icons";
 
 export function Hero() {
   const containerVariants = {
@@ -19,7 +20,7 @@ export function Hero() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
+      transition: { duration: 0.8, ease: "easeOut" as const },
     },
   };
 
@@ -74,13 +75,6 @@ export function Hero() {
             >
               <span>View Work</span>
               <ArrowRight size={18} />
-            </a>
-            <a
-              href="#"
-              className="flex items-center space-x-2 bg-card glass px-6 py-3 rounded-xl font-medium hover:bg-white/5 transition-colors border border-border"
-            >
-              <Download size={18} />
-              <span>Resume</span>
             </a>
           </motion.div>
 

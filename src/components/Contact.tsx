@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, MapPin, Mail, Phone, Linkedin, Github } from "lucide-react";
+import { Send, MapPin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin } from "./Icons";
 
 export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);

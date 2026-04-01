@@ -38,6 +38,16 @@ const journey = [
     ],
     icon: GraduationCap,
   },
+  {
+    type: "education",
+    period: "Jun 2020 - Jul 2021",
+    title: "Secondary School Leaving Certificate",
+    organization: "Ashirvad High School | Bellary",
+    details: [
+      "Percentage: 84.32% "
+    ],
+    icon: GraduationCap,
+  },
 ];
 
 export function Experience() {
@@ -98,8 +108,8 @@ export function Experience() {
                   <ul className={`space-y-2 text-foreground/70 text-sm ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
                     {item.details.map((detail, i) => (
                       <li key={i} className={`flex ${index % 2 === 0 ? 'items-start flex-row' : 'items-start flex-row-reverse space-x-reverse'}`}>
-                         <span className={`mt-1.5 w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0 ${index % 2 === 0 ? 'mr-2' : 'ml-2'}`}></span>
-                         <span>{detail}</span>
+                        <span className={`mt-1.5 w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0 ${index % 2 === 0 ? 'mr-2' : 'ml-2'}`}></span>
+                        <span>{detail}</span>
                       </li>
                     ))}
                   </ul>
